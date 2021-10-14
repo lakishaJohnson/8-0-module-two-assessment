@@ -30,13 +30,18 @@ fetch("https://ghibliapi.herokuapp.com/films")
             }
         }
     })
-    const form = document.querySelector("form")
+    
+    const form = document.querySelector("#submit-button")
+    const ul = document.querySelector("ul")
+    const input = document.querySelector("form input")
+    
+
     form.addEventListener("click", (event) => {
         event.preventDefault();
-        
-        const ul = document.querySelector("ul")
         const li = document.createElement("li")
+        
+        li.innerHTML = `<strong>${dropDown.value}:</strong> ${input.value}` 
         ul.append(li)
-        li.innerHTML = `<strong><b>${dropDown.value}:</strong></b> ${event.target.review.value}`
+        // document.form.reset()
     })
 })
