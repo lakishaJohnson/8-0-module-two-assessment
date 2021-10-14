@@ -1,0 +1,29 @@
+main {
+    display: grid;
+    margin: 0 auto;
+    text-align: left;
+    grid-template-rows: 2;
+    padding-top: 50px;
+    
+  }
+body {
+    background-color: lavender;
+    padding-left: 15%;
+  padding-right: 15%;
+}
+header {
+    background-color: skyblue;
+}
+    
+   
+h1 {
+    font-family: monospace;
+    text-align: right;
+    font-size: 30px;
+}
+img {
+    height: 250px;
+    width: 700px;
+}
+
+
